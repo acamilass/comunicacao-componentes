@@ -1,0 +1,11 @@
+<div>
+  <h1>Componente Pai</h1>
+  <h2>{{ message }}</h2>
+
+  <p>--------</p>
+
+  <app-filho 
+    [userName]="user.name"
+    (welcomeMessage)="returnMessage($event)"
+  ></app-filho>
+</div>
